@@ -46,28 +46,28 @@ const Routes = {
 };
 
 
-const tabbaroption = {
-    activeTintColor: '#f3474b',
-    inactiveTintColor: '#7b7b7b',
+const tabbaroption = {//tab的样式等配置
+    activeTintColor: '#f3474b', // 当前选中的tab bar的文本颜色和图标颜色
+    inactiveTintColor: '#7b7b7b',//当前未选中的tab bar的文本颜色和图标颜色
     showIcon: true,
-    style: {
+    style: { //tab bar的样式
         backgroundColor:'white'
     },
-    indicatorStyle: {
+    indicatorStyle: { // tab 页指示符的样式 (tab页下面的一条线).
         opacity: 0
     },
-    iconStyle:{
+    iconStyle:{//tab bar的图标样式
         paddingTop:0,
         padding:0,
         marginTop:0,
         width:SCALE(45),
         height:SCALE(45),
     },
-    labelStyle:{
+    labelStyle:{ //tab bar的文本样式
         marginTop:0,
         padding:0,
     },
-    tabStyle: {
+    tabStyle: {//tab页的样式
         height:Platform.OS==='ios'?SCALE(90):SCALE(100),
         alignItems:'center',
         justifyContent:'center',
@@ -87,11 +87,11 @@ const Index = TabNavigator(
     },
     {
         lazy: true,
-        swipeEnabled: false,
-        tabBarComponent:props => <Tab {...props}/>,
-        tabBarPosition: 'bottom',
-        animationEnabled: false,
-        tabBarOptions: tabbaroption,
+        swipeEnabled: false,//是否可以滑动切换tab
+        tabBarComponent:props => <Tab {...props}/>,//用作渲染tab bar的组件
+        tabBarPosition: 'bottom',//tab bar的位置, 可选值： 'top' or 'bottom'
+        animationEnabled: false,//点击选项卡切换界面是否需要动画
+        tabBarOptions: tabbaroption,//tab的样式等配置
         headerLeft:null,
     });
 
@@ -136,10 +136,10 @@ const AppNavigator = StackNavigator(
         },
     },
     {
-        initialRouteName: 'Index',
-        headerMode: 'screen',
-        mode: 'card',
-        transitionConfig: TransitionConfiguration,
+        initialRouteName: 'Index',//设置堆栈的默认页面
+        headerMode: 'screen',// 定义标题该如何渲染
+        mode: 'card', //定义页面渲染和转换的风格
+        transitionConfig: TransitionConfiguration, // 返回一个与默认页面的transitionConfig合并的对象的函数
         navigationOptions: ({navigation}) => StackOptions({navigation}),
     }
 );
@@ -161,7 +161,6 @@ export default class App extends Component {
 
 
         return(
-
             <AppNavigator/>
         );
     }

@@ -29,7 +29,7 @@ export default class Tab extends Component {
             tintColor:color
         };
 
-        if(index===2){
+        if(index === 2){
             return (<View
                     key={route.key}
                     style={[styles.tabItem,{backgroundColor:'transparent'}]}>
@@ -65,8 +65,10 @@ export default class Tab extends Component {
             <View style={styles.tab}>
                 {routes && routes.map((route,index) => this.renderItem(route, index))}
             </View>
+            {/*设置中间按钮凸出样式  使用绝对定位*/}
             <TouchableOpacity
                 key={"centerView"}
+
                 style={[styles.tabItem,{position:'absolute',bottom:0,left:(WIDTH-SCALE(100))/2,right:WIDTH-SCALE(100),height:SCALE(120)}]}
                 onPress={() => jumpToIndex(2)}>
                 <View
@@ -104,4 +106,4 @@ const styles = {
         width:SCALE(42),
         height:SCALE(42),
     },
-}
+};
