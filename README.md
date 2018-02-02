@@ -122,7 +122,7 @@ const styles = {
 
 ```
 
-##  推荐react-navigation 中文翻译：  [zhangyanlf]: https://www.reactnavigation.org.cn
+####  推荐react-navigation 中文翻译：  [zhangyanlf]: https://www.reactnavigation.org.cn
 
 ## PS：运用 react-navigation 是问题记录
 #### 1.Android 导航栏文字居中效果
