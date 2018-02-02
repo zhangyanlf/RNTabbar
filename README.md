@@ -11,7 +11,7 @@ TabBar（Android/iOS按钮突出效果）
 # ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/iOS效果图.png)  ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/安卓效果图.png)
 
 
-##代码实现
+## 实现代码
 ``` React-Native
 import React, { Component } from 'react';
 import {
