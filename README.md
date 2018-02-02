@@ -8,8 +8,8 @@ TabBar（Android/iOS按钮突出效果）
 #### 4.Xcode/Android Studio 运行项目
 
 ## 效果如图
-# ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/iOS效果图.png)
-# ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/安卓效果图.png)
+# ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/iOS效果图.png) # ![image](https://github.com/zhangyanlf/RNTabbar/blob/master/testTab/Class/image/安卓效果图.png)
+
 
 ##代码实现
 ``` React-Native
