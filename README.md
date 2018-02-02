@@ -122,9 +122,9 @@ const styles = {
 
 ```
 
-##  推荐react-navigation 中文翻译：  [reactnavigation]: https://www.reactnavigation.org.cn       "reactnavigation"
-## PS：运用 react-navigation 是问题记录
+##  推荐react-navigation 中文翻译：  [zhangyanlf]: https://www.reactnavigation.org.cn
 
+## PS：运用 react-navigation 是问题记录
 #### 1.Android 导航栏文字居中效果
 #### node_modules -- react-navigation -- src -- views -- Header -- Header.js 修改368行 将  alignItems: Platform.OS === 'ios' ? 'center' : 'flex-start' 改为 'center'即可 （遇到的问题后续还会持续更新）
 ```
